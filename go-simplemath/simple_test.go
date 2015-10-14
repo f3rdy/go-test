@@ -23,9 +23,9 @@ func TestSub(t *testing.T) {
 	cases := []struct {
 		in_a, in_b, want int
 	}{
-		{2,1,1},
-		{5,1,4},
-		{7,5,2},
+		{2, 1, 1},
+		{5, 1, 4},
+		{7, 5, 2},
 	}
 	for _, c := range cases {
 		got := Sub(c.in_a, c.in_b)
@@ -33,5 +33,5 @@ func TestSub(t *testing.T) {
 			t.Errorf("Sub(%d,%d) == %d, want %d", c.in_a, c.in_b, got, c.want)
 		}
 	}
-	
+
 }
